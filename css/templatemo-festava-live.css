@@ -11,16 +11,16 @@ https://templatemo.com/tm-583-festava-live
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #EE5007;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
+  --white-color:                  #ffffff;   /* Bianco puro, mantiene contrasto */
+  --primary-color:                #b30000;   /* Rosso scuro rock, stile sangue */
+  --secondary-color:              #8b0000;   /* Rosso intenso tipo dark cherry */
+  --section-bg-color:             #1a1a1a;   /* Grigio quasi nero, look underground */
+  --custom-btn-bg-color:          #b30000;   /* Bottone rosso deciso */
+  --custom-btn-bg-hover-color:    #ff1a1a;   /* Hover rosso brillante per effetto acceso */
+  --dark-color:                   #000000;   /* Nero assoluto */
+  --p-color:                      #cccccc;   /* Grigio chiaro per leggibilità su sfondo scuro */
+  --border-color:                 #a9a9a9;   /* Grigio metallico tipo acciaio */
+  --link-hover-color:             #ff4d4d;   /* Rosso fuoco per hover link */
 
   --body-font-family:             'Outfit', sans-serif;
 
