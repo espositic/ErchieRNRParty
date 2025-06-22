@@ -22,7 +22,7 @@ https://templatemo.com/tm-583-festava-live
   --border-color:                 #a9a9a9;   /* Grigio metallico tipo acciaio */
   --link-hover-color:             #ff4d4d;   /* Rosso fuoco per hover link */
 
-  --body-font-family:             'Outfit', sans-serif;
+  --font-family:                  serif;
 
   --h1-font-size:                 74px;
   --h2-font-size:                 46px;
@@ -41,6 +41,11 @@ https://templatemo.com/tm-583-festava-live
   --font-weight-light:            300;
   --font-weight-normal:           400;
   --font-weight-bold:             700;
+}
+
+.title-cinzel {
+  font-family: "Cinzel", serif;
+  font-weight: 800;
 }
 
 body {
