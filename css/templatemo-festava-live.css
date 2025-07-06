@@ -23,6 +23,8 @@ https://templatemo.com/tm-583-festava-live
   --link-hover-color:             #ff4d4d;   /* Rosso fuoco per hover link */
 
   --font-family: 'Montserrat', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
 
   --h1-font-size:                 74px;
   --h2-font-size:                 46px;
@@ -85,15 +87,19 @@ h6 {
 }
 
 p {
-  color: var(--p-color);
+  font-family: var(--font-family);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-medium); /* oppure var(--font-weight-regular) */
+  color: var(--p-color);
 }
 
-ul li {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+ul li,
+span,
+label,
+button,
+.form-control {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
 }
 
 a, 
@@ -473,7 +479,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  height: calc(100vh - 80px); /* Adatta 80px all'altezza della navbar */
+  height: calc(100vh); /* Adatta 80px all'altezza della navbar */
   padding-top: 80px; /* per evitare che il contenuto venga nascosto dalla navbar */
 }
 
@@ -1050,4 +1056,32 @@ html, body {
 .carousel-indicators .active {
   background-color: #ff0000;
   border-color: #ff0000;
+}
+
+.site-footer {
+  background-color: var(--dark-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.site-footer p {
+  color: var(--white-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light); /* o medium */
+  margin-bottom: 0.5rem;
+}
+
+.site-footer img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link,
+.title-cinzel,
+.social-icon span,
+.social-share span {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: italic;
+  font-weight: 900;
 }
