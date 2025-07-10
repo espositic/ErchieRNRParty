@@ -1085,3 +1085,56 @@ html, body {
   font-style: italic;
   font-weight: 900;
 }
+/* Aggiungi al tuo CSS */
+.about-section {
+    overflow: hidden;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+}
+
+.py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+/* Margini per i titoli uniformi */
+h4 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .content-wrapper {
+        margin-left: 15% !important;
+        width: 70% !important;
+    }
+    
+    h4 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        margin-left: 5% !important;
+        width: 90% !important;
+    }
+    
+    h4 {
+        font-size: 1.6rem;
+    }
+    
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+/* Aggiungi questo al tuo file CSS */
+.bg-white {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ff4d4d' fill-opacity='0.27'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
