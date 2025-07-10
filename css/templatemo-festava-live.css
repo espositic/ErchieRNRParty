@@ -1138,3 +1138,128 @@ h4 {
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ff4d4d' fill-opacity='0.27'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* Aggiungi queste regole in fondo al tuo file CSS */
+
+@media screen and (max-width: 767px) {
+  /* Riduci il logo principale */
+  .hero-section img {
+    height: 200px !important;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Nascondi il testo nel logo della navbar */
+  .navbar-brand div {
+    display: none;
+  }
+
+  /* Riduci il logo nella navbar */
+  .navbar-brand img {
+    height: 40px !important;
+    margin-right: 0 !important;
+  }
+
+  /* Riduci le dimensioni del testo generale */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 80% !important;
+  }
+
+  /* Modifica il pulsante delle prevendite */
+  .custom-btn {
+    font-size: 12px !important;
+    padding: 8px 12px !important;
+    white-space: nowrap;
+  }
+
+  /* Testo del pulsante solo "PREVENDITE" */
+  .btn.custom-btn.d-lg-none.me-4::after,
+  .btn.custom-btn.d-lg-block.d-none::after {
+    content: "PREVENDITE";
+    display: inline;
+  }
+  
+  .btn.custom-btn.d-lg-none.me-4,
+  .btn.custom-btn.d-lg-block.d-none {
+    font-size: 0 !important;
+    position: relative;
+  }
+  
+  .btn.custom-btn.d-lg-none.me-4::before,
+  .btn.custom-btn.d-lg-block.d-none::before {
+    content: none !important;
+  }
+
+  /* Riduci il padding nelle sezioni */
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Centra e riduci il testo nelle sezioni about */
+  .about-section .content-wrapper {
+    margin-left: 10% !important;
+    width: 80% !important;
+  }
+
+  /* Riduci la dimensione del testo nelle sezioni about */
+  .about-section h4 {
+    font-size: 1.4rem !important;
+  }
+
+  .about-section p, 
+  .about-section li {
+    font-size: 0.9rem !important;
+  }
+
+  /* Riduci il padding nella navbar */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 5px 10px !important;
+    margin: 5px !important;
+  }
+
+  /* Riduci la dimensione del testo nella hero section */
+  .hero-section h5 {
+    font-size: 16px !important;
+  }
+
+  /* Riduci lo spazio tra gli elementi nella hero section */
+  .hero-section .col-lg-12.col-12.mt-auto {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Riduci la dimensione dei social icon */
+  .social-icon-link {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Regole aggiuntive per schermi molto piccoli */
+@media screen and (max-width: 480px) {
+  /* Ulteriore riduzione del logo principale */
+  .hero-section img {
+    height: 150px !important;
+  }
+
+  /* Ulteriore riduzione del testo */
+  .about-section h4 {
+    font-size: 1.2rem !important;
+  }
+
+  /* Riduci il padding nelle sezioni */
+  .py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Centra e riduci ulteriormente il testo nelle sezioni about */
+  .about-section .content-wrapper {
+    margin-left: 5% !important;
+    width: 90% !important;
+  }
+}
