@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content=""> 
 
-    <title>Rock 'n' Roll Party 2025</title>
+    <title>ROCK 'N' ROLL PARTY 2025</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -221,55 +221,79 @@ https://templatemo.com/tm-583-festava-live
 </section>
 
 
-        <section id="section_3" class="artists-section p-0 m-0" style="height: 100vh; overflow: hidden;">
-        <div id="carouselExample" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="3000">
+<section id="section_3" class="artists-section p-0 m-0" style="height: 93vh; overflow: hidden;">
+    <div id="carouselExample" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner h-100">
+            <!-- Le immagini verranno inserite qui dinamicamente via JavaScript -->
+        </div>
 
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExample" data-bs-slide-to="1" class="active"></li>
-                <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
-                <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
-                <li data-bs-target="#carouselExample" data-bs-slide-to="4"></li>
-                <li data-bs-target="#carouselExample" data-bs-slide-to="5"></li>
-                <li data-bs-target="#carouselExample" data-bs-slide-to="6"></li>
-                <li data-bs-target="#carouselExample" data-bs-slide-to="7"></li>
-            </ol>
-            <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100">
-                <img src="images/photo1.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 1">
-            </div>
-            <div class="carousel-item h-100">
-                <img src="images/photo1.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 2">
-            </div>
-            <div class="carousel-item h-100">
-                <img src="images/photo2.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 3">
-            </div>
-            <div class="carousel-item h-100">
-                <img src="images/photo3.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 3">
-            </div>
-            <div class="carousel-item h-100">
-                <img src="images/photo4.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 3">
-            </div>
-            <div class="carousel-item h-100">
-                <img src="images/photo5.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 3">
-            </div>
-            <div class="carousel-item h-100">
-                <img src="images/photo6.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 3">
-            </div>
-            <div class="carousel-item h-100">
-                <img src="images/photo7.jpg" class="d-block w-100 h-100 img-fullscreen" alt="Foto 3">
-            </div>        
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Precedente</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Successivo</span>
-            </button>
-        </div>
-        </section>
+        </button>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Array con i nomi delle immagini nella cartella carousel
+        const carouselImages = [
+            'photo1.jpg',
+            'photo2.jpg',
+            'photo3.jpg',
+            'photo4.jpg',
+            'photo5.jpg',
+            'photo6.jpg',
+            'photo7.jpg',
+            'photo8.jpg',
+            'photo9.jpg',
+            'photo10.jpg',
+            'photo11.jpg',
+            'photo12.jpg',
+            'photo13.jpg',
+            'photo14.jpg',
+            'photo15.jpg',
+            'photo16.jpg',
+            'photo17.jpg'
+
+            // Aggiungi qui altri nomi di file se necessario
+        ];
+        
+        const carouselInner = document.querySelector('#carouselExample .carousel-inner');
+        
+        // Genera gli elementi del carosello
+        carouselImages.forEach((image, index) => {
+            const item = document.createElement('div');
+            item.className = `carousel-item h-100 ${index === 0 ? 'active' : ''}`;
+            item.innerHTML = `<img src="images/carousel/${image}" class="d-block w-100 h-100 img-fullscreen" alt="Foto ${index + 1}">`;
+            carouselInner.appendChild(item);
+        });
+        
+        // Aggiungi gli indicatori
+        const indicatorsContainer = document.createElement('ol');
+        indicatorsContainer.className = 'carousel-indicators';
+        
+        carouselImages.forEach((_, index) => {
+            const indicator = document.createElement('li');
+            indicator.setAttribute('data-bs-target', '#carouselExample');
+            indicator.setAttribute('data-bs-slide-to', index.toString());
+            if (index === 0) indicator.className = 'active';
+            indicatorsContainer.appendChild(indicator);
+        });
+        
+        document.querySelector('#carouselExample').prepend(indicatorsContainer);
+        
+        // Configura il ciclo infinito
+        const carousel = new bootstrap.Carousel('#carouselExample', {
+            wrap: true,
+            interval: 3000
+        });
+    });
+</script>
 
 
         <!--
